@@ -1,15 +1,8 @@
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  outline: solid 1px red;
-}
-
 body {
-  width: 100vw;
+  max-width: 100%;
   height: 3000px;
   overflow-x: hidden;
-  background-color: lightgray;
+  background-color: #F3F3F3;
 }
 
 nav {
@@ -17,7 +10,7 @@ nav {
   height: 100px;
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  justify-content: space-evenly;
   padding-right: 2vw;
   background-color: white;
 }
@@ -30,8 +23,11 @@ nav .navbarLeft {
 nav .navbarRight {
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  justify-content: flex-end;
   align-items: baseline;
+  width: 100%;
+  -moz-column-gap: 100px;
+       column-gap: 100px;
 }
 nav .links {
   display: flex;
@@ -40,7 +36,7 @@ nav .links {
   align-content: center;
 }
 nav .theGameFactoryTitle {
-  width: 400px;
+  max-width: 400px;
   height: 100px;
   display: flex;
   flex-direction: row;
@@ -60,7 +56,7 @@ nav .theGameFactoryTitle a {
   color: black;
 }
 nav .gamesLink {
-  width: 100px;
+  max-width: 100px;
   height: 40px;
   margin-top: 30px;
   margin-left: 4vw;
@@ -78,7 +74,7 @@ nav .gamesLink a {
   color: black;
 }
 nav .teamLink {
-  width: 100px;
+  max-width: 100px;
   height: 40px;
   margin-top: 30px;
   margin-left: 1vw;
@@ -96,7 +92,7 @@ nav .teamLink a {
   color: black;
 }
 nav .aboutLink {
-  width: 100px;
+  max-width: 100px;
   height: 40px;
   margin-top: 30px;
   margin-left: 1vw;
@@ -123,7 +119,7 @@ nav .buttonBox .contactButton {
   border: solid 1px black;
   border-radius: 5px;
   background-color: black;
-  width: 100px;
+  max-width: 100px;
   height: 40px;
   margin-top: 30px;
   margin-left: 1vw;
@@ -149,6 +145,7 @@ nav .buttonBox .contactButton a {
   justify-content: space-between;
   padding-left: 5vw;
   padding-right: 5vw;
+  height: 500px;
 }
 .banner .bannerLeft {
   display: flex;
@@ -158,19 +155,20 @@ nav .buttonBox .contactButton a {
 }
 .banner .bannerLeft .bannerTitle {
   height: 100px;
-  width: 400px;
+  max-width: 400px;
   text-align: center;
   font-size: 36px;
 }
 .banner .bannerLeft .bannerText {
   height: 100px;
-  width: 400px;
+  max-width: 400px;
   text-align: center;
   font-size: 18px;
 }
 .banner .bannerRight {
   display: flex;
   flex-direction: row;
+  align-items: center;
 }
 .banner .bannerButton {
   border: solid 1px black;
@@ -200,8 +198,26 @@ nav .buttonBox .contactButton a {
   background-color: white;
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
   align-items: center;
+}
+.featuredGamesContainer .cardContainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  width: 100%;
+}
+.featuredGamesContainer .cardContainer .card {
+  max-width: 250px;
+  height: 350px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.featuredGamesContainer .cardContainer .card .gameTextContainer {
+  max-width: 230px;
+  height: 150px;
+  margin: 0;
+  padding: 0;
 }
 
 .staffPicture {
