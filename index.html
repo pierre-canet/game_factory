@@ -3,6 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/x-icon" href="assets/img/firefly.png" />
     <link rel="stylesheet" href="assets/css/reset.css" />
     <link rel="stylesheet" href="assets/css/style.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -41,9 +42,7 @@
           </div>
 
           <div class="buttonBox">
-            <div class="contactButton">
-              <a href="">Contact</a>
-            </div>
+            <button class="contactButton">Contact</button>
           </div>
         </div>
       </nav>
@@ -62,8 +61,8 @@
             </p>
           </div>
           <div class="bannerButtonbox">
-            <a href="" class="bannerButton">Play our games</a>
-            <a href="" class="bannerButton">Learn more</a>
+            <button href="" class="bannerButton">Play our games</button>
+            <button href="" class="bannerButton">Learn more</button>
           </div>
         </div>
         <div class="bannerRight">
@@ -76,65 +75,76 @@
         </div>
       </section>
       <section class="featuredGamesContainer">
-        <div>Featured Games</div>
+        <div><h3>Featured Games</h3></div>
         <div>
-          Discover our latest gaming adventures, each crafted with passion and
-          attention to detail
+          <p class="featuredGamesIntroduction">
+            Discover our latest gaming adventures, each crafted with passion and
+            attention to detail
+          </p>
         </div>
         <div class="cardContainer">
           <div class="card">
             <img
-              src="assets/img/Placeholder.png"
+              src="assets/img/mystic_realms_cover.jpg"
               width="250px"
               height="150px"
               alt="game cover"
+              class="gameCover"
             />
-            <div class="gameTextContainer">
-              <h4 class="gameTitle">Mystic Realms</h4>
-              <p class="gameDesc">
-                Mystic Realms An epic fantasy RPG where magic meets technology
-                in a world torn between ancient traditions and modern
-                innovation.
-              </p>
-              <p class="gameStats">⭐ 4.8 👥 1-4 Players 📅 2024</p>
-            </div>
+            <div class="bottomCard">
+              <div class="gameTextContainer">
+                <h4 class="gameTitle">Mystic Realms</h4>
+                <p class="gameDesc">
+                  Mystic Realms An epic fantasy RPG where magic meets technology
+                  in a world torn between ancient traditions and modern
+                  innovation.
+                </p>
+                <p class="gameStats">⭐ 4.8 👥 1-4 Players 📅 2024</p>
+              </div>
 
-            <button class="playButton">Play now</button>
+              <button class="playButton">Play now</button>
+            </div>
           </div>
           <div class="card">
             <img
-              src="assets/img/Placeholder.png"
+              src="assets/img/cyber_hunter_cover.jpg"
               width="250px"
               height="150px"
               alt="game cover"
+              class="gameCover"
             />
-            <div class="gameTextContainer">
-              <h4 class="gameTitle">Cyber Hunters</h4>
-              <p class="gameDesc">
-                Fast-paced cyberpunk shooter set in a neon-lit dystopian future
-                where corporations rule the world.
-              </p>
-              <p class="gameStats">⭐ 4.6 👥 1-8 Players 📅 Q2 2025</p>
+            <div class="bottomCard">
+              <div class="gameTextContainer">
+                <h4 class="gameTitle">Cyber Hunters</h4>
+                <p class="gameDesc">
+                  Fast-paced cyberpunk shooter set in a neon-lit dystopian
+                  future where corporations rule the world.
+                </p>
+                <p class="gameStats">⭐ 4.6 👥 1-8 Players 📅 Q2 2025</p>
+              </div>
+              <button class="playButton">Learn more</button>
             </div>
-            <button class="playButton">Learn more</button>
           </div>
           <div class="card">
             <img
-              src="assets/img/Placeholder.png"
+              src="assets/img/ocean_depth_icon.jpg"
               width="250px"
               height="150px"
               alt="game cover"
+              class="gameCover"
             />
-            <div class="gameTextContainer">
-              <h4 class="gameTitle">Ocean Depths</h4>
-              <p class="gameDesc">
-                Explore the mysteries of the deep sea in this atmospheric
-                underwater adventure filled with ancient secrets.
-              </p>
-              <p class="gameStats">⭐ 4.8 👥 1-4 Players 📅 2024</p>
-            </div>
+            <div class="bottomCard">
+              <div class="gameTextContainer">
+                <h4 class="gameTitle">Ocean Depths</h4>
+                <p class="gameDesc">
+                  Explore the mysteries of the deep sea in this atmospheric
+                  underwater adventure filled with ancient secrets.
+                </p>
+                <p class="gameStats">⭐ 4.8 👥 1-4 Players 📅 2024</p>
+              </div>
 
-            <button class="playButton">Play now</button>
+              <button class="playButton">Play now</button>
+            </div>
           </div>
         </div>
       </section>

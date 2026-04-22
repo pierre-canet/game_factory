@@ -1,15 +1,31 @@
+//Variables Scss
+$base-color-1: #FFFFFF;
+$base-colort-2: #F3F3F3;
+$text-font: Noto Sans Thai;
+
+//Mixins
+@mixin buttons-style {
+    height: 40px;
+    border-radius: 5px;
+    background-color: #000000;
+    color: $base-color-1;
+    text-align: center;
+    padding: 5px;
+    font-family: $text-font;
+    font-size: 18px;
+}
+
 body{
     max-width: 100%;
     height: 3000px;
     overflow-x: hidden;
-    background-color: #F3F3F3;
+    background-color: $base-color-1;
 }
 nav{
     width: 100vw;
     height: 100px;
     display: flex;
     flex-direction: row;
-    justify-content: space-evenly;
     padding-right: 2vw;
     background-color: white;
 
@@ -50,6 +66,7 @@ nav{
         font-size: 36px;
         line-height: 100%;
         letter-spacing: 0%;
+        width: 400px;
         vertical-align: middle;        
     
 
@@ -117,29 +134,8 @@ nav{
         align-content: center;
 
         .contactButton{
-        border: solid 1px black;
-        border-radius: 5px;
-        background-color: black;
-        max-width: 100px;
-        height: 40px;
-        margin-top: 30px;
-        margin-left: 1vw;
-        text-align: center;
-        font-family: Noto Sans Thai;
-        color: white;
-        font-weight: 400;
-        font-style: normal;
-        font-size: 18px;
-        line-height: 100%;
-        letter-spacing: 0%;
-        align-content: center;
-        vertical-align: middle;
-
-            a{
-                color: white;
-                text-decoration: none;
-            }
-    }
+            @include buttons-style
+        }
     }
 }
 
@@ -150,6 +146,7 @@ nav{
     padding-left: 5vw;
     padding-right: 5vw;
     height: 500px;
+    background-color: $base-colort-2;
     
 
     .bannerLeft{
@@ -161,14 +158,14 @@ nav{
         .bannerTitle{
             height: 100px;
             max-width: 400px;
-            text-align: center;
+            text-align: left;
             font-size: 36px;
         }
 
         .bannerText{
             height: 100px;
             max-width: 400px;
-            text-align: center;
+            text-align: left;
             font-size: 18px;
         }
     }
@@ -179,37 +176,33 @@ nav{
         align-items: center;
     }
 
-    .bannerButton{
-        border: solid 1px black;
-        border-radius: 5px;
-        background-color: black;
-        width: 100px;
-        height: 40px;
-        margin-top: 30px;
-        margin-left: 1vw;
-        text-align: center;
-        font-family: Noto Sans Thai;
-        color: white;
-        font-weight: 400;
-        font-style: normal;
-        font-size: 18px;
-        line-height: 100%;
-        letter-spacing: 0%;
-        align-content: center;
-        vertical-align: middle;
+    .bannerButtonbox {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        column-gap: 11px;
+        width: 100%;
 
-            a{
-                color: white;
-                text-decoration: none;
-            }
+        .bannerButton{
+            @include buttons-style
+        }
     }
+
+    
 }
 
 .featuredGamesContainer{
     background-color: white;
     display: flex;
     flex-direction: column;
+    justify-content: space-evenly;
     align-items: center;
+    height: 600px;
+    font-family: $text-font;
+    
+    h3 {font-size: 32px;}
+
+    .featuredGamesIntroduction {font-size: 18px;}
     
     .cardContainer{
         display: flex;
@@ -219,18 +212,47 @@ nav{
 
         .card{
             max-width: 250px;
-            height: 350px;
+            height: 375px;
             display: flex;
             flex-direction: column;
             align-items: center;
+            border-radius: 5px;
+            
+            box-shadow:  0 4px 4px 4px rgb(0 0 0/5%) ;
+            .bottomCard {
+                height: 100%;
+                width: 100%;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: space-evenly;
 
-            .gameTextContainer{
+                .gameTextContainer{
                 max-width: 230px;
                 height: 150px;
-                margin: 0;
-                padding: 0;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                text-align: left;
+
+                h4{
+                    font-size: 18px;
+                }
+
+                p {
+                    font-size: 11px;
+                }
                 
             }
+            .playButton {
+                @include buttons-style
+            }
+            }
+            .gameCover{
+                border-radius: 5px 5px 0 0;
+            }
+
+            
         }
     }
 }

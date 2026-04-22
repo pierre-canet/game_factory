@@ -2,7 +2,7 @@ body {
   max-width: 100%;
   height: 3000px;
   overflow-x: hidden;
-  background-color: #F3F3F3;
+  background-color: #FFFFFF;
 }
 
 nav {
@@ -10,7 +10,6 @@ nav {
   height: 100px;
   display: flex;
   flex-direction: row;
-  justify-content: space-evenly;
   padding-right: 2vw;
   background-color: white;
 }
@@ -49,6 +48,7 @@ nav .theGameFactoryTitle {
   font-size: 36px;
   line-height: 100%;
   letter-spacing: 0%;
+  width: 400px;
   vertical-align: middle;
 }
 nav .theGameFactoryTitle a {
@@ -116,27 +116,14 @@ nav .buttonBox {
   align-content: center;
 }
 nav .buttonBox .contactButton {
-  border: solid 1px black;
-  border-radius: 5px;
-  background-color: black;
-  max-width: 100px;
   height: 40px;
-  margin-top: 30px;
-  margin-left: 1vw;
+  border-radius: 5px;
+  background-color: #000000;
+  color: #FFFFFF;
   text-align: center;
+  padding: 5px;
   font-family: Noto Sans Thai;
-  color: white;
-  font-weight: 400;
-  font-style: normal;
   font-size: 18px;
-  line-height: 100%;
-  letter-spacing: 0%;
-  align-content: center;
-  vertical-align: middle;
-}
-nav .buttonBox .contactButton a {
-  color: white;
-  text-decoration: none;
 }
 
 .banner {
@@ -146,6 +133,7 @@ nav .buttonBox .contactButton a {
   padding-left: 5vw;
   padding-right: 5vw;
   height: 500px;
+  background-color: #F3F3F3;
 }
 .banner .bannerLeft {
   display: flex;
@@ -156,13 +144,13 @@ nav .buttonBox .contactButton a {
 .banner .bannerLeft .bannerTitle {
   height: 100px;
   max-width: 400px;
-  text-align: center;
+  text-align: left;
   font-size: 36px;
 }
 .banner .bannerLeft .bannerText {
   height: 100px;
   max-width: 400px;
-  text-align: center;
+  text-align: left;
   font-size: 18px;
 }
 .banner .bannerRight {
@@ -170,35 +158,39 @@ nav .buttonBox .contactButton a {
   flex-direction: row;
   align-items: center;
 }
-.banner .bannerButton {
-  border: solid 1px black;
-  border-radius: 5px;
-  background-color: black;
-  width: 100px;
-  height: 40px;
-  margin-top: 30px;
-  margin-left: 1vw;
-  text-align: center;
-  font-family: Noto Sans Thai;
-  color: white;
-  font-weight: 400;
-  font-style: normal;
-  font-size: 18px;
-  line-height: 100%;
-  letter-spacing: 0%;
-  align-content: center;
-  vertical-align: middle;
+.banner .bannerButtonbox {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  -moz-column-gap: 11px;
+       column-gap: 11px;
+  width: 100%;
 }
-.banner .bannerButton a {
-  color: white;
-  text-decoration: none;
+.banner .bannerButtonbox .bannerButton {
+  height: 40px;
+  border-radius: 5px;
+  background-color: #000000;
+  color: #FFFFFF;
+  text-align: center;
+  padding: 5px;
+  font-family: Noto Sans Thai;
+  font-size: 18px;
 }
 
 .featuredGamesContainer {
   background-color: white;
   display: flex;
   flex-direction: column;
+  justify-content: space-evenly;
   align-items: center;
+  height: 600px;
+  font-family: Noto Sans Thai;
+}
+.featuredGamesContainer h3 {
+  font-size: 32px;
+}
+.featuredGamesContainer .featuredGamesIntroduction {
+  font-size: 18px;
 }
 .featuredGamesContainer .cardContainer {
   display: flex;
@@ -208,16 +200,47 @@ nav .buttonBox .contactButton a {
 }
 .featuredGamesContainer .cardContainer .card {
   max-width: 250px;
-  height: 350px;
+  height: 375px;
   display: flex;
   flex-direction: column;
   align-items: center;
+  border-radius: 5px;
+  box-shadow: 0 4px 4px 4px rgba(0, 0, 0, 0.05);
 }
-.featuredGamesContainer .cardContainer .card .gameTextContainer {
+.featuredGamesContainer .cardContainer .card .bottomCard {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.featuredGamesContainer .cardContainer .card .bottomCard .gameTextContainer {
   max-width: 230px;
   height: 150px;
-  margin: 0;
-  padding: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  text-align: left;
+}
+.featuredGamesContainer .cardContainer .card .bottomCard .gameTextContainer h4 {
+  font-size: 18px;
+}
+.featuredGamesContainer .cardContainer .card .bottomCard .gameTextContainer p {
+  font-size: 11px;
+}
+.featuredGamesContainer .cardContainer .card .bottomCard .playButton {
+  height: 40px;
+  border-radius: 5px;
+  background-color: #000000;
+  color: #FFFFFF;
+  text-align: center;
+  padding: 5px;
+  font-family: Noto Sans Thai;
+  font-size: 18px;
+}
+.featuredGamesContainer .cardContainer .card .gameCover {
+  border-radius: 5px 5px 0 0;
 }
 
 .staffPicture {
