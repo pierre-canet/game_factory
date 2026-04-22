@@ -121,9 +121,9 @@ nav .buttonBox .contactButton {
   background-color: #000000;
   color: #FFFFFF;
   text-align: center;
-  padding: 5px;
   font-family: Noto Sans Thai;
   font-size: 18px;
+  width: 100px;
 }
 
 .banner {
@@ -172,9 +172,9 @@ nav .buttonBox .contactButton {
   background-color: #000000;
   color: #FFFFFF;
   text-align: center;
-  padding: 5px;
   font-family: Noto Sans Thai;
   font-size: 18px;
+  width: 157px;
 }
 
 .featuredGamesContainer {
@@ -235,9 +235,9 @@ nav .buttonBox .contactButton {
   background-color: #000000;
   color: #FFFFFF;
   text-align: center;
-  padding: 5px;
   font-family: Noto Sans Thai;
   font-size: 18px;
+  width: 157px;
 }
 .featuredGamesContainer .cardContainer .card .gameCover {
   border-radius: 5px 5px 0 0;
