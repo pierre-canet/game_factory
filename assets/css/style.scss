@@ -349,3 +349,14 @@ nav{
     
 }
 
+.aboutContainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+
+    .aboutDesc {
+        width: 800px;
+        font-size: 24px;
+    }
+}
+
